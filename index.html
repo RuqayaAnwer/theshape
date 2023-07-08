@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cir {
+            margin: 12px;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: change_color  2s infinite;
+        }
+
+        @keyframes change_color {
+            0% {
+                background-color: blue;
+            }
+
+            25% {
+                background-color: blueviolet;
+            }
+
+            50% {
+                background-color: chocolate;
+            }
+
+            75% {
+                background-color: chartreuse;
+            }
+
+            100% {
+                background-color: cadetblue;
+            }
+        }
+
+        .seq {
+            margin: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation: rotation 2s infinite
+        }
+
+        @keyframes rotation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(45deg);
+            }
+
+            50% {
+                transform: rotate(90deg);
+            }
+
+            75% {
+                transform: rotate(180deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>css animation</h1>
+    <div class="cir"></div>
+    <div class="seq"></div>
+
+</body>
+
+</html>
